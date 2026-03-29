@@ -403,9 +403,9 @@ body{
 }
 #downloadBtn {
   position: fixed;
-  top: 50%; /* Τοποθετεί το κουμπί στο κέντρο της σελίδας κάθετα */
-  left: 50%; /* Τοποθετεί το κουμπί στο κέντρο της σελίδας οριζόντια */
-  transform: translate(-50%, -50%); /* Μετατοπίζει το κουμπί έτσι ώστε να είναι ακριβώς στο κέντρο */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70px;
   height: 70px;
   background: url('pics/download.png') no-repeat center center;
