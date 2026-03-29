@@ -405,8 +405,4 @@ body{
   width: 60px;  /* ρυθμίζει το πλάτος */
   height: 60px; /* ρυθμίζει το ύψος */
   object-fit: contain; /* διασφαλίζει ότι το εικονίδιο παραμένει με αναλογία πλευρών */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
