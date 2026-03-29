@@ -206,14 +206,13 @@ body{
 	transition:margin-left 0.5s;
 }
 
-.thumbnails {
-    position: fixed;
-    bottom: 180px;   /* ⬅ ανεβάζει τα thumbnails πιο πάνω */
-    left: 50%;
-    transform: translateX(-50%);
-	width: 90%;              /* ⬅ ανοίγει σχεδόν όλη την οθόνη */
-    max-width: 1200px;      /* προαιρετικό όριο */
-	z-index: 1000;
+.thumbnails{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:140px;
+	z-index:1;
 }
 
 .thumbnails > div{
