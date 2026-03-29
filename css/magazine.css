@@ -401,4 +401,20 @@ body{
         transform-origin: center center;
     }
 }
+#downloadBtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Τοποθετεί το κουμπί στο κέντρο της οθόνης */
+  width: 70px; /* Ρυθμισμένο πλάτος */
+  height: 70px; /* Ρυθμισμένο ύψος */
+  background: url('pics/download.png') no-repeat center center; /* Το εικονίδιο που φορτώνεις */
+  background-size: contain; /* Τοποθέτηση του PNG σωστά */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
 
+#downloadBtn:hover {
+  background-color: #fff; /* Εφέ hover για αλλαγή χρώματος στο φόντο */
+}
