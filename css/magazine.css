@@ -406,23 +406,25 @@ body{
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px; /* Αύξησε το μέγεθος */
-  height: 70px; /* Αύξησε το ύψος */
-  font-size: 24px;
+  width: 80px; /* Αυξάναμε το πλάτος */
+  height: 80px; /* Αυξάναμε το ύψος */
+  font-size: 28px; /* Αυξήσαμε τη γραμματοσειρά */
   background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Αυξήσαμε την σκιά για καλύτερη ορατότητα */
   text-align: center;
-  line-height: 70px; /* Κεντράρισμα του κειμένου */
+  line-height: 80px; /* Κεντράρισμα του κειμένου */
   color: #000;
   z-index: 9999;
 }
 
 @media only screen and (max-width: 768px) {
   #downloadBtn {
-    width: 60px; /* Ακόμα μεγαλύτερο σε κινητό */
-    height: 60px;
-    font-size: 20px;
-    line-height: 60px; /* Κεντράρισμα κειμένου */
+    width: 90px; /* Ακόμα μεγαλύτερο για κινητό */
+    height: 90px;
+    font-size: 32px; /* Μεγαλύτερη γραμματοσειρά για κινητά */
+    line-height: 90px; /* Κεντράρισμα του κειμένου */
+    border-radius: 50%; /* Στρογγυλό κουμπί */
+    background: rgba(255, 255, 255, 0.9);
   }
 }
