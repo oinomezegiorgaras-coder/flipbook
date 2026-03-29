@@ -403,18 +403,18 @@ body{
 }
 #downloadBtn {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Τοποθετεί το κουμπί στο κέντρο της οθόνης */
-  width: 70px; /* Ρυθμισμένο πλάτος */
-  height: 70px; /* Ρυθμισμένο ύψος */
-  background: url('pics/download.png') no-repeat center center; /* Το εικονίδιο που φορτώνεις */
-  background-size: contain; /* Τοποθέτηση του PNG σωστά */
+  top: 50%; /* Τοποθετεί το κουμπί στο κέντρο της σελίδας κάθετα */
+  left: 50%; /* Τοποθετεί το κουμπί στο κέντρο της σελίδας οριζόντια */
+  transform: translate(-50%, -50%); /* Μετατοπίζει το κουμπί έτσι ώστε να είναι ακριβώς στο κέντρο */
+  width: 70px;
+  height: 70px;
+  background: url('pics/download.png') no-repeat center center;
+  background-size: contain;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 9999;
 }
 
 #downloadBtn:hover {
-  background-color: #fff; /* Εφέ hover για αλλαγή χρώματος στο φόντο */
+  background-color: #fff;
 }
