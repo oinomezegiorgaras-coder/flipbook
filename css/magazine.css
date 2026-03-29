@@ -402,13 +402,14 @@ body{
     }
 }
 #downloadIcon {
-    position: absolute;  /* Ξεκολλάει το κουμπί από την πάνω αριστερή γωνία */
-    top: 20px;           /* Απόσταση από την κορυφή (μπορείς να το αλλάξεις) */
-    left: 50%;           /* Το πάει στη μέση οριζόντια */
-    transform: translateX(-50%); /* Το ευθυγραμμίζει ακριβώς στο κέντρο του άξονά του */
+    position: fixed !important;   /* Fixed για να μένει στην οθόνη ακόμα και στο scroll */
+    top: 20px !important;        /* Απόσταση από την κορυφή */
+    left: 50% !important;        /* Πήγαινε στο 50% του πλάτους */
+    transform: translateX(-50%) !important; /* Μετακίνησε το κέντρο του κουμπιού στη μέση */
     
-    width: 50px; 
-    height: 50px; 
-    object-fit: contain;
-    z-index: 9999;       /* Διασφαλίζει ότι θα φαίνεται πάνω από την εικόνα */
+    display: block !important;   /* Σιγουρέψου ότι δεν είναι κρυφό */
+    z-index: 999999 !important;  /* Φέρτο τέρμα μπροστά από όλα τα επίπεδα */
+    
+    width: 60px !important;      /* Όρισε το μέγεθος ξανά */
+    height: auto !important;
 }
