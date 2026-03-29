@@ -211,15 +211,15 @@ body{
     bottom: 180px;   /* ⬅ ανεβάζει τα thumbnails πιο πάνω */
     left: 50%;
     transform: translateX(-50%);
-	width: 92%;              /* ⬅ ανοίγει σχεδόν όλη την οθόνη */
-    max-width: 1400px;      /* προαιρετικό όριο */
+	width: 90%;              /* ⬅ ανοίγει σχεδόν όλη την οθόνη */
+    max-width: 1200px;      /* προαιρετικό όριο */
 	z-index: 1000;
 }
 
 .thumbnails > div{
 	width:1050px;
-	height: auto;
-	margin:10px auto;
+	height:100px;
+	margin:20px auto;
 }
 
 .thumbnails ul{
