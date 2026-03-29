@@ -403,7 +403,7 @@ body{
 }
 #downloadIcon {
     position: fixed !important;
-    top: 50px !important;         /* Αυξάνοντας αυτόν τον αριθμό, το κουμπί κατεβαίνει */
+    top: 20px !important;         /* Αυξάνοντας αυτόν τον αριθμό, το κουμπί κατεβαίνει */
     left: 50% !important;
     transform: translateX(-50%) !important;
     z-index: 999999 !important;
