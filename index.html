@@ -508,6 +508,27 @@ yepnope({
 	complete: loadApp
 });
 </script>
+<audio id="flipSound" preload="auto">
+  <source src="extras/flip.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+$(function () {
+    const sound = document.getElementById('flipSound');
+
+    function playFlipSound() {
+        if (!sound) return;
+        sound.currentTime = 0;
+        const p = sound.play();
+        if (p && typeof p.catch === 'function') {
+            p.catch(() => {});
+        }
+    }
+
+    $('.magazine').on('turning', function () {
+        playFlipSound();
+    });
+});
+</script>
 </body>
 </html>
