@@ -403,13 +403,13 @@ body{
 }
 #downloadBtn {
   position: fixed;
-  top: 20px;
+  top: 20px; 
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70px; /* Πλάτος */
-  height: 70px; /* Ύψος */
+  transform: translateX(-50%);
+  width: 60px; /* Μικρότερο πλάτος */
+  height: 60px; /* Μικρότερο ύψος */
   background: url('pics/download.png') no-repeat center center;
-  background-size: contain;
+  background-size: contain; /* Κατάλληλο μέγεθος εικονιδίου */
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 9999;
