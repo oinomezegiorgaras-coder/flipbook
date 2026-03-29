@@ -223,18 +223,14 @@ body{
 }
 
 .thumbnails ul{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px 18px;   /* πάνω-κάτω / δεξιά-αριστερά */
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    -webkit-transform:scale3d(0.5, 0.5, 1);
+    -moz-transform:scale3d(0.5, 0.5, 1);
+    -o-transform:scale3d(0.5, 0.5, 1);
+    -ms-transform:scale3d(0.5, 0.5, 1);
+    transform:scale3d(0.5, 0.5, 1);
 }
 
 .thumbanils-touch ul{
