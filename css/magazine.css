@@ -413,11 +413,6 @@ body{
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Προσθήκη σκιάς για καλύτερη ορατότητα */
   z-index: 9999;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-  #downloadBtn {
-    width: 60px; /* Μικρότερο μέγεθος για κινητό */
-    height: 60px; /* Μικρότερο ύψος για κινητό */
-  }
-}
