@@ -401,8 +401,16 @@ body{
         transform-origin: center center;
     }
 }
-#downloadIcon {
-  width: 50px;  /* ρυθμίζει το πλάτος */
-  height: 50px; /* ρυθμίζει το ύψος */
-  object-fit: contain; /* διασφαλίζει ότι το εικονίδιο παραμένει με αναλογία πλευρών */
+#downloadBtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Μετακινεί το κουμπί στην ακριβή κεντρική θέση */
+  width: 70px; /* Μπορείς να το ρυθμίσεις ανάλογα με τις ανάγκες σου */
+  height: 70px;
+  background: url('pics/download.png') no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
 }
