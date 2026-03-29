@@ -403,11 +403,11 @@ body{
 }
 #downloadBtn {
   position: fixed;
-  top: 50%;
+  top: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
+  width: 70px; /* Πλάτος */
+  height: 70px; /* Ύψος */
   background: url('pics/download.png') no-repeat center center;
   background-size: contain;
   border-radius: 50%;
