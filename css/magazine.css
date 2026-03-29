@@ -403,12 +403,14 @@ body{
 }
 #downloadIcon {
     position: fixed !important;
-    top: 20px !important;         /* Αυξάνοντας αυτόν τον αριθμό, το κουμπί κατεβαίνει */
+    top: 50px !important;              /* Κράτησα την απόσταση που βάλαμε πριν */
     left: 50% !important;
     transform: translateX(-50%) !important;
     z-index: 999999 !important;
     
-    width: 50px !important;
-    height: 50px !important;
+    /* ΑΛΛΑΓΗ ΕΔΩ ΓΙΑ ΜΕΓΕΘΟΣ */
+    width: 35px !important;           /* Δοκίμασε 30px έως 45px ανάλογα το γούστο σου */
+    height: 35px !important;          /* Κράτα την ίδια τιμή για να παραμείνει τετράγωνο */
+    
     object-fit: contain;
 }
