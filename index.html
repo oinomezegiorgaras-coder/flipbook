@@ -507,31 +507,7 @@ yepnope({
 	both: ['lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
 	complete: loadApp
 });
-$(function(){
-  const sound=document.getElementById('flipSound');
-  function playFlipSound(){ if(!sound) return; sound.currentTime=0; const p=sound.play(); if(p && typeof p.catch==='function') p.catch(()=>{}); }
-  $('#arrowLeft').on('click',function(){ $('.magazine').turn('previous'); playFlipSound(); });
-  $('#arrowRight').on('click',function(){ $('.magazine').turn('next'); playFlipSound(); });
-  $(document).on('keydown',function(e){ if(e.keyCode===37||e.keyCode===39) playFlipSound(); });
-  $('.magazine').bind('turning',function(){ playFlipSound(); });
-});
-
-document.getElementById('fullscreen-btn').addEventListener('click',function(){
-  if(!document.fullscreenElement){ document.documentElement.requestFullscreen(); this.textContent='🞬'; }
-  else if(document.exitFullscreen){ document.exitFullscreen(); this.textContent='⛶'; }
-});
-    
-    // Επιτρέπει γύρισμα σελίδων με το ροδάκι του ποντικιού
-$('.magazine-viewport').on('wheel', function(e){
-    e.preventDefault(); // Αποτρέπει το default scroll
-    if(e.originalEvent.deltaY < 0){
-        // Κίνηση προς τα πάνω -> προηγούμενη σελίδα
-        $('.magazine').turn('previous');
-    } else {
-        // Κίνηση προς τα κάτω -> επόμενη σελίδα
-        $('.magazine').turn('next');
-    }
-});
+<audio id="pageSound" src="extras/flip.mp3" preload="auto"></audio>
 
 </script>
 
