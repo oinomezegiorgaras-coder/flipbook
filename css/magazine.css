@@ -211,29 +211,30 @@ body{
     bottom: 180px;   /* ⬅ ανεβάζει τα thumbnails πιο πάνω */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000;
+	width: 92%;              /* ⬅ ανοίγει σχεδόν όλη την οθόνη */
+    max-width: 1400px;      /* προαιρετικό όριο */
+	z-index: 1000;
 }
 
 .thumbnails > div{
 	width:1050px;
-	height:100px;
-	margin:20px auto;
+	height: auto;
+	margin:10px auto;
 }
 
 .thumbnails ul{
-	margin:0;
-	padding:0;
-	text-align:center;
-	-webkit-transform:scale3d(0.5, 0.5, 1);
-	-moz-transform:scale3d(0.5, 0.5, 1);
-	-o-transform:scale3d(0.5, 0.5, 1);
-	-ms-transform:scale3d(0.5, 0.5, 1);
-	transform:scale3d(0.5, 0.5, 1);
-	-webkit-transition:-webkit-transform ease-in-out 100ms;
-	-moz-transition:-moz-transform ease-in-out 100ms;
-	-ms-transition:-ms-transform ease-in-out 100ms;
-	-o-transition:-o-transform ease-in-out 100ms;
-	transition:transform ease-in-out 100ms;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 18px;   /* πάνω-κάτω / δεξιά-αριστερά */
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
 }
 
 .thumbanils-touch ul{
