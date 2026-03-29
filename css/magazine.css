@@ -208,7 +208,7 @@ body{
 
 .thumbnails {
     position: fixed;
-    bottom: 80px;   /* ⬅ ανεβάζει τα thumbnails πιο πάνω */
+    bottom: 180px;   /* ⬅ ανεβάζει τα thumbnails πιο πάνω */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
