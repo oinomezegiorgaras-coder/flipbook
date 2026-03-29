@@ -377,3 +377,21 @@ body{
 	bottom:0;
 	width:100%;
 }
+@media only screen and (max-width: 768px) {
+
+    .magazine-viewport .container {
+        width: 820px;
+        height: 180px;
+    }
+
+    .magazine-viewport .magazine {
+        width: 820px;
+        height: 534px;
+        left: -410px;
+    }
+
+    .magazine-viewport .page {
+        width: 410px;
+        height: 534px;
+    }
+}
