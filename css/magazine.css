@@ -408,7 +408,7 @@ body{
   transform: translateX(-50%);
   width: 70px; /* Αύξηση πλάτους */
   height: 70px; /* Αύξηση ύψους */
-  background: url('lib/download.png') no-repeat center center; /* Εισαγωγή εικονιδίου PNG */
+  background: url('pics/download.png') no-repeat center center; /* Εισαγωγή εικονιδίου PNG */
   background-size: contain; /* Κάνουμε το PNG να χωράει καλά στο κουμπί */
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Προσθήκη σκιάς για καλύτερη ορατότητα */
