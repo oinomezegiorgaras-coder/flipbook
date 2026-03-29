@@ -401,4 +401,8 @@ body{
         transform-origin: center center;
     }
 }
-
+#downloadIcon {
+  width: 50px;  /* ρυθμίζει το πλάτος */
+  height: 50px; /* ρυθμίζει το ύψος */
+  object-fit: contain; /* διασφαλίζει ότι το εικονίδιο παραμένει με αναλογία πλευρών */
+}
