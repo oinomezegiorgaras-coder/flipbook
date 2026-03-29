@@ -233,16 +233,23 @@ function resizeViewport() {
 	zoom('resize');
 
 
-	if ($('.magazine').turn('zoom')==1) {
-		var bound = calculateBound({
-			width: options.width,
-			height: options.height,
-			boundWidth: Math.min(options.width, width),
-			boundHeight: Math.min(options.height, height)
-		});
+if ($('.magazine').turn('zoom')==1) {
 
-		if (bound.width%2!==0)
-			bound.width-=1;
+    var sideMargin = 0;
+
+    if (width <= 768) {
+        sideMargin = 100;
+    }
+
+    var bound = calculateBound({
+        width: options.width,
+        height: options.height,
+        boundWidth: Math.min(options.width, width - sideMargin),
+        boundHeight: Math.min(options.height, height)
+    });
+
+    if (bound.width%2!==0)
+        bound.width-=1;
 
 			
 		if (bound.width!=$('.magazine').width() || bound.height!=$('.magazine').height()) {
