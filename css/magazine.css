@@ -401,3 +401,23 @@ body{
         transform-origin: center center;
     }
 }
+#downloadBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#downloadBtn:hover{
+    background: #fff;
+}
