@@ -206,56 +206,66 @@ body{
 	transition:margin-left 0.5s;
 }
 
-/* --- ΔΙΟΡΘΩΜΕΝΟΣ ΚΩΔΙΚΑΣ ΓΙΑ ΝΑ ΕΠΑΝΕΜΦΑΝΙΣΤΟΥΝ --- */
+/* --- ΚΩΔΙΚΑΣ ΓΙΑ ΤΑ THUMBNAILS ΤΟΥ MAGAZINE --- */
 
 .thumbnails {
-    position: relative; /* Άλλαξα από absolute σε relative για να "σπρώχνει" το περιεχόμενο και να μη χάνεται */
-    margin-top: 50px;
-    width: 100%;
-    height: auto; 
-    z-index: 10;
-    clear: both;
+    position: relative !important; /* Ξεκλειδώνει τη θέση */
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important; /* Επιτρέπει να μεγαλώσει σε ύψος */
+    margin-top: 50px !important;
+    padding-bottom: 50px;
+    z-index: 999;
 }
 
 .thumbnails > div {
-    width: 90%; 
-    max-width: 1000px;
-    margin: 0 auto;
-    height: auto;
+    width: 90% !important;
+    max-width: 1000px !important;
+    height: auto !important; /* Ξεκλειδώνει το ύψος του εσωτερικού div */
+    margin: 0 auto !important;
 }
 
 .thumbnails ul {
-    display: grid !important; 
-    /* Εδώ ορίζουμε τις 3 στήλες */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-    margin: 0;
-    list-style: none;
-    /* Αφαιρούμε το scale3d που τα εξαφάνιζε */
-    transform: none !important; 
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* 3 Στήλες */
+    gap: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    transform: none !important; /* Καταργεί το scale που τα έκανε μικροσκοπικά */
 }
 
 .thumbnails li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
+    background: white;
+    transition: transform 0.2s;
 }
 
 .thumbnails img {
-    width: 100%; /* Για να γεμίζει το κουτάκι της η εικόνα */
-    height: auto;
-    display: block;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
     float: none !important;
 }
 
-/* Για να μην κρύβονται κάτω από το magazine container αν είναι absolute */
+/* Ειδική διόρθωση για το viewport */
 .magazine-viewport {
+    overflow-y: auto !important; /* Επιτρέπει το σκρολάρισμα αν οι 3 σειρές πιάνουν πολύ χώρο */
     height: auto !important;
-    min-height: 800px; 
+    min-height: 100vh;
+}
+
+/* Αν θες να κρύψεις τα νούμερα σελίδων (span) που φαίνονται κάτω από τα thumbs */
+.thumbnails li span {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .exit-message{
