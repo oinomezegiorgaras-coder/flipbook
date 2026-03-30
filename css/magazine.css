@@ -206,51 +206,77 @@ body{
 	transition:margin-left 0.5s;
 }
 
-/* --- ΚΩΔΙΚΑΣ ΓΙΑ ΤΑ THUMBNAILS ΤΟΥ MAGAZINE --- */
+/* --- ΝΕΟΣ, ΣΥΜΒΑΤΟΣ ΚΩΔΙΚΑΣ ΓΙΑ 3 ΣΤΗΛΕΣ THUMBNAILS --- */
 
 .thumbnails {
-    position: relative !important; /* Ξεκλειδώνει τη θέση */
+    position: relative !important;
     bottom: auto !important;
     left: auto !important;
     width: 100% !important;
-    height: auto !important; /* Επιτρέπει να μεγαλώσει σε ύψος */
-    margin-top: 50px !important;
-    padding-bottom: 50px;
+    height: auto !important;
+    margin: 50px auto !important; /* Κεντράρισμα και απόσταση */
+    padding: 0 0 50px 0 !important;
     z-index: 999;
+    clear: both !important;
+    display: block !important;
+    background: transparent !important;
 }
 
 .thumbnails > div {
-    width: 90% !important;
-    max-width: 1000px !important;
-    height: auto !important; /* Ξεκλειδώνει το ύψος του εσωτερικού div */
-    margin: 0 auto !important;
+    /* Εδώ ορίζουμε το συνολικό πλάτος που θα πιάνουν οι 3 στήλες */
+    width: 600px !important; 
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 0 auto !important; /* Κεντράρισμα */
+    padding: 0 !important;
+    text-align: center !important; /* Κεντράρει τα thumbnails μέσα στο div */
 }
 
 .thumbnails ul {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important; /* 3 Στήλες */
-    gap: 20px !important;
-    padding: 0 !important;
     margin: 0 !important;
-    list-style: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
     transform: none !important; /* Καταργεί το scale που τα έκανε μικροσκοπικά */
+    -webkit-transform: none !important;
+    display: block !important;
 }
 
 .thumbnails li {
-    display: block !important;
-    width: 100% !important;
+    display: inline-block !important; /* Επιτρέπει να μπαίνουν δίπλα-δίπλα */
+    
+    /* ΕΔΩ ΕΙΝΑΙ Η ΑΛΛΑΓΗ: ~30% πλάτος για να χωράνε 3 σε κάθε σειρά */
+    width: 30% !important; 
+    max-width: 180px; /* Μέγιστο πλάτος για να μην μεγαλώνουν πολύ */
+    
     height: auto !important;
-    margin: 0 !important;
+    margin: 10px 1.5% !important; /* Μικρό κενό μεταξύ τους (περίπου 3% συνολικά) */
+    
+    padding: 0 !important;
+    position: relative !important;
+    list-style: none !important;
+    vertical-align: top !important; /* Στοίχιση στο πάνω μέρος */
+    
     box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
     background: white;
     transition: transform 0.2s;
 }
 
 .thumbnails img {
-    width: 100% !important;
+    width: 100% !important; /* Η εικόνα να πιάνει όλο το πλάτος του li */
     height: auto !important;
     display: block !important;
     float: none !important;
+}
+
+/* Αν θες να κρύψεις τα νούμερα σελίδων (span) που φαίνονται κάτω από τα thumbs */
+.thumbnails li span {
+    display: block !important;
+    text-align: center !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+    width: 100% !important;
 }
 
 /* Ειδική διόρθωση για το viewport */
@@ -259,15 +285,6 @@ body{
     height: auto !important;
     min-height: 100vh;
 }
-
-/* Αν θες να κρύψεις τα νούμερα σελίδων (span) που φαίνονται κάτω από τα thumbs */
-.thumbnails li span {
-    display: block;
-    text-align: center;
-    padding: 5px;
-    font-size: 12px;
-}
-
 .exit-message{
 	position: absolute;
 	top:10px;
