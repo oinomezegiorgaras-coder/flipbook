@@ -206,58 +206,57 @@ body{
 	transition:margin-left 0.5s;
 }
 
-/* --- ΤΡΟΠΟΠΟΙΗΜΕΝΟΣ ΚΩΔΙΚΑΣ ΓΙΑ 3 ΣΤΗΛΕΣ --- */
+/* --- ΔΙΟΡΘΩΜΕΝΟΣ ΚΩΔΙΚΑΣ ΓΙΑ ΝΑ ΕΠΑΝΕΜΦΑΝΙΣΤΟΥΝ --- */
 
 .thumbnails {
-    position: absolute;
-    bottom: 20px; /* Χαμήλωσα το bottom για να χωρέσουν οι 3 σειρές */
-    left: 0;
+    position: relative; /* Άλλαξα από absolute σε relative για να "σπρώχνει" το περιεχόμενο και να μη χάνεται */
+    margin-top: 50px;
     width: 100%;
-    height: auto; /* Auto για να μεγαλώνει ανάλογα με το περιεχόμενο */
-    z-index: 1;
+    height: auto; 
+    z-index: 10;
+    clear: both;
 }
 
 .thumbnails > div {
-    width: 95%; /* Πιο ευέλικτο πλάτος */
-    max-width: 1050px;
-    margin: 20px auto;
+    width: 90%; 
+    max-width: 1000px;
+    margin: 0 auto;
     height: auto;
 }
 
 .thumbnails ul {
-    margin: 0;
-    padding: 0;
-    display: grid; /* Χρήση Grid */
-    /* Δημιουργία 3 στηλών με ίσο πλάτος */
+    display: grid !important; 
+    /* Εδώ ορίζουμε τις 3 στήλες */
     grid-template-columns: repeat(3, 1fr); 
-    gap: 15px; /* Κενό ανάμεσα στα thumbnails */
-    text-align: center;
+    gap: 20px; 
+    padding: 20px;
+    margin: 0;
     list-style: none;
-    
-    /* Αφαίρεσα το transform: scale(0.5) γιατί θα τα έκανε πολύ μικρά σε πλέγμα, 
-       αν το θες οπωσδήποτε, κράτα το, αλλά το Grid δουλεύει καλύτερα χωρίς αυτό */
-    transform: none; 
+    /* Αφαιρούμε το scale3d που τα εξαφάνιζε */
+    transform: none !important; 
 }
 
 .thumbnails li {
     list-style: none;
-    display: block; /* Από inline-block σε block για το grid */
     margin: 0;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
-    -webkit-transition: transform 60ms;
-    transition: transform 60ms;
-    background: white; /* Για να φαίνονται καθαρά */
+    padding: 0;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .thumbnails img {
-    display: block;
-    width: 100%; /* Η εικόνα να πιάνει όλο το πλάτος της στήλης */
+    width: 100%; /* Για να γεμίζει το κουτάκι της η εικόνα */
     height: auto;
-    float: none; /* Κατάργηση του float */
+    display: block;
+    float: none !important;
 }
 
-/* --- ΤΕΛΟΣ ΤΡΟΠΟΠΟΙΗΣΗΣ --- */
+/* Για να μην κρύβονται κάτω από το magazine container αν είναι absolute */
+.magazine-viewport {
+    height: auto !important;
+    min-height: 800px; 
+}
 
 .exit-message{
 	position: absolute;
