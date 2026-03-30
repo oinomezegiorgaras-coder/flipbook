@@ -409,8 +409,8 @@ body{
     z-index: 999999 !important;
     
     /* ΑΛΛΑΓΗ ΕΔΩ ΓΙΑ ΜΕΓΕΘΟΣ */
-    width: 35px !important;           /* Δοκίμασε 30px έως 45px ανάλογα το γούστο σου */
-    height: 35px !important;          /* Κράτα την ίδια τιμή για να παραμείνει τετράγωνο */
+    width: 45px !important;           /* Δοκίμασε 30px έως 45px ανάλογα το γούστο σου */
+    height: 45px !important;          /* Κράτα την ίδια τιμή για να παραμείνει τετράγωνο */
     
     object-fit: contain;
 }
