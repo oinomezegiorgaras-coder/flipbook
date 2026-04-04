@@ -414,3 +414,39 @@ body{
     
     object-fit: contain;
 }
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+
+  #downloadBtn,
+  #zoomBtn,
+  #prevBtn,
+  #nextBtn {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 14px !important;
+    transform: none !important;
+  }
+
+  #downloadBtn img,
+  #zoomBtn img,
+  #prevBtn img,
+  #nextBtn img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  #downloadBtn,
+  #zoomBtn {
+    top: 8px !important;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    top: 50% !important;
+    margin-top: -16px !important;
+  }
+
+  .magazine,
+  #flipbook {
+    margin-top: 28px !important;
+  }
+}
