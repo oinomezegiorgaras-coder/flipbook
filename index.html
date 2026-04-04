@@ -5,407 +5,533 @@
 <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>ΚΑΤΑΛΟΓΟΣ ΔΕΞΙΩΣΕΩΝ ΒΑΠΤΙΣΕΩΝ &amp; ΓΑΜΩΝ "Ο ΓΙΩΡΓΑΡΑΣ" - ΒΥΖΙΤΣΑ - ΠΗΛΙΟ</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+<title>ΚΑΤΑΛΟΓΟΣ ΔΕΞΙΩΣΕΩΝ ΒΑΠΤΙΣΕΩΝ & ΓΑΜΩΝ "Ο ΓΙΩΡΓΑΡΑΣ" - ΒΥΖΙΤΣΑ - ΠΗΛΙΟ</title>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
 <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="lib/hash.js"></script>
 
 </head>
 <body>
-
 <a href="extras/Katalog.pdf" id="downloadBtn" target="_blank">
   <img src="pics/download.png" alt="Download" id="downloadIcon">
 </a>
 
 <div id="canvas">
 
-  <div class="zoom-icon zoom-icon-in"></div>
+<div class="zoom-icon zoom-icon-in"></div>
 
-  <div class="magazine-viewport">
-    <div class="container">
-      <div class="magazine">
-        <div ignore="1" class="next-button"></div>
-        <div ignore="1" class="previous-button"></div>
-      </div>
-    </div>
-  </div>
+<div class="magazine-viewport">
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+		</div>
+	</div>
+</div>
 
-  <div class="thumbnails">
-    <div>
-      <ul>
-        <li class="i">
-          <img src="pages/1-thumb.jpg" width="125" height="85" class="page-1">
-          <span>1</span>
-        </li>
-        <li class="d">
-          <img src="pages/2-thumb.jpg" width="125" height="85" class="page-2">
-          <img src="pages/3-thumb.jpg" width="125" height="85" class="page-3">
-          <span>2-3</span>
-        </li>
-        <li class="d">
-          <img src="pages/4-thumb.jpg" width="125" height="85" class="page-4">
-          <img src="pages/5-thumb.jpg" width="125" height="85" class="page-5">
-          <span>4-5</span>
-        </li>
-        <li class="d">
-          <img src="pages/6-thumb.jpg" width="125" height="85" class="page-6">
-          <img src="pages/7-thumb.jpg" width="125" height="85" class="page-7">
-          <span>6-7</span>
-        </li>
-        <li class="d">
-          <img src="pages/8-thumb.jpg" width="125" height="85" class="page-8">
-          <img src="pages/9-thumb.jpg" width="125" height="85" class="page-9">
-          <span>8-9</span>
-        </li>
-        <li class="d">
-          <img src="pages/10-thumb.jpg" width="125" height="85" class="page-10">
-          <img src="pages/11-thumb.jpg" width="125" height="85" class="page-11">
-          <span>10-11</span>
-        </li>
-        <li class="d">
-          <img src="pages/12-thumb.jpg" width="125" height="85" class="page-12">
-          <img src="pages/13-thumb.jpg" width="125" height="85" class="page-13">
-          <span>12-13</span>
-        </li>
-        <li class="d">
-          <img src="pages/14-thumb.jpg" width="125" height="85" class="page-14">
-          <img src="pages/15-thumb.jpg" width="125" height="85" class="page-15">
-          <span>14-15</span>
-        </li>
-        <li class="d">
-          <img src="pages/16-thumb.jpg" width="125" height="85" class="page-16">
-          <img src="pages/17-thumb.jpg" width="125" height="85" class="page-17">
-          <span>16-17</span>
-        </li>
-        <li class="d">
-          <img src="pages/18-thumb.jpg" width="125" height="85" class="page-18">
-          <img src="pages/19-thumb.jpg" width="125" height="85" class="page-19">
-          <span>18-19</span>
-        </li>
-        <li class="d">
-          <img src="pages/20-thumb.jpg" width="125" height="85" class="page-20">
-          <img src="pages/21-thumb.jpg" width="125" height="85" class="page-21">
-          <span>20-21</span>
-        </li>
-        <li class="d">
-          <img src="pages/22-thumb.jpg" width="125" height="85" class="page-22">
-          <img src="pages/23-thumb.jpg" width="125" height="85" class="page-23">
-          <span>22-23</span>
-        </li>
-        <li class="d">
-          <img src="pages/24-thumb.jpg" width="125" height="85" class="page-24">
-          <img src="pages/25-thumb.jpg" width="125" height="85" class="page-25">
-          <span>24-25</span>
-        </li>
-        <li class="d">
-          <img src="pages/26-thumb.jpg" width="125" height="85" class="page-26">
-          <img src="pages/27-thumb.jpg" width="125" height="85" class="page-27">
-          <span>26-27</span>
-        </li>
-        <li class="d">
-          <img src="pages/28-thumb.jpg" width="125" height="85" class="page-28">
-          <img src="pages/29-thumb.jpg" width="125" height="85" class="page-29">
-          <span>28-29</span>
-        </li>
-        <li class="i">
-          <img src="pages/30-thumb.jpg" width="125" height="85" class="page-30">
-          <span>30</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
+<!-- Thumbnails -->
+<div class="thumbnails">
+	<div>
+		<ul>
+			<li class="i">
+				<img src="pages/1-thumb.jpg" width="125" height="85" class="page-1">
+				<span>1</span>
+			</li>
+			<li class="d">
+				<img src="pages/2-thumb.jpg" width="125" height="85" class="page-2">
+				<img src="pages/3-thumb.jpg" width="125" height="85" class="page-3">
+				<span>2-3</span>
+			</li>
+			<li class="d">
+				<img src="pages/4-thumb.jpg" width="125" height="85" class="page-4">
+				<img src="pages/5-thumb.jpg" width="125" height="85" class="page-5">
+				<span>4-5</span>
+			</li>
+			<li class="d">
+				<img src="pages/6-thumb.jpg" width="125" height="85" class="page-6">
+				<img src="pages/7-thumb.jpg" width="125" height="85" class="page-7">
+				<span>6-7</span>
+			</li>
+			<li class="d">
+				<img src="pages/8-thumb.jpg" width="125" height="85" class="page-8">
+				<img src="pages/9-thumb.jpg" width="125" height="85" class="page-9">
+				<span>8-9</span>
+			</li>
+			<li class="d">
+				<img src="pages/10-thumb.jpg" width="125" height="85" class="page-10">
+				<img src="pages/11-thumb.jpg" width="125" height="85" class="page-11">
+				<span>10-11</span>
+			</li>
+			<li class="d">
+				<img src="pages/12-thumb.jpg" width="125" height="85" class="page-12">
+				<img src="pages/13-thumb.jpg" width="125" height="85" class="page-13">
+				<span>12-13</span>
+			</li>
+			<li class="d">
+				<img src="pages/14-thumb.jpg" width="125" height="85" class="page-14">
+				<img src="pages/15-thumb.jpg" width="125" height="85" class="page-15">
+				<span>14-15</span>
+			</li>
+			<li class="d">
+				<img src="pages/16-thumb.jpg" width="125" height="85" class="page-16">
+				<img src="pages/17-thumb.jpg" width="125" height="85" class="page-17">
+				<span>16-17</span>
+			</li>
+			<li class="d">
+				<img src="pages/18-thumb.jpg" width="125" height="85" class="page-18">
+				<img src="pages/19-thumb.jpg" width="125" height="85" class="page-19">
+				<span>18-19</span>
+			</li>
+			<li class="d">
+				<img src="pages/20-thumb.jpg" width="125" height="85" class="page-20">
+				<img src="pages/21-thumb.jpg" width="125" height="85" class="page-21">
+				<span>4-5</span>
+			</li>
+			<li class="d">
+				<img src="pages/22-thumb.jpg" width="125" height="85" class="page-22">
+				<img src="pages/23-thumb.jpg" width="125" height="85" class="page-23">
+				<span>22-23</span>
+			</li>
+			<li class="d">
+				<img src="pages/24-thumb.jpg" width="125" height="85" class="page-24">
+				<img src="pages/25-thumb.jpg" width="125" height="85" class="page-25">
+				<span>24-25</span>
+			</li>
+			<li class="d">
+				<img src="pages/26-thumb.jpg" width="125" height="85" class="page-26">
+				<img src="pages/27-thumb.jpg" width="125" height="85" class="page-27">
+				<span>26-27</span>
+			</li>
+			<li class="d">
+				<img src="pages/28-thumb.jpg" width="125" height="85" class="page-28">
+				<img src="pages/29-thumb.jpg" width="125" height="85" class="page-29">
+				<span>28-29</span>
+			</li>
+			<li class="i">
+				<img src="pages/30-thumb.jpg" width="125" height="85"class="page-30">
+				<span>30</span>
+			</li>
+		<ul>
+	<div>	
+</div>
 </div>
 
 <script type="text/javascript">
+
 function loadApp() {
 
-  $('#canvas').fadeIn(1000);
+ 	$('#canvas').fadeIn(1000);
 
-  var flipbook = $('.magazine');
+ 	var flipbook = $('.magazine');
 
-  if (flipbook.width() == 0 || flipbook.height() == 0) {
-    setTimeout(loadApp, 10);
-    return;
-  }
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+	
+	// Create the flipbook
 
-  flipbook.turn({
-    width: 1549,
-    height: 569,
-    duration: 1000,
-    acceleration: !isChrome(),
-    gradients: true,
-    autoCenter: true,
-    elevation: 50,
-    pages: 30,
+	flipbook.turn({
+			
+			// Magazine width
 
-    when: {
-      turning: function(event, page, view) {
+			width: 1549,
 
-        var book = $(this),
-            currentPage = book.turn('page'),
-            pages = book.turn('pages');
+			// Magazine height
 
-        Hash.go('page/' + page).update();
+			height: 569,
 
-        disableControls(page);
+			// Duration in millisecond
 
-        $('.thumbnails .page-' + currentPage)
-          .parent()
-          .removeClass('current');
+			duration: 1000,
 
-        $('.thumbnails .page-' + page)
-          .parent()
-          .addClass('current');
-      },
+			// Hardware acceleration
 
-      turned: function(event, page, view) {
+			acceleration: !isChrome(),
 
-        disableControls(page);
+			// Enables gradients
 
-        $(this).turn('center');
+			gradients: true,
+			
+			// Auto center this flipbook
 
-        if (page == 1) {
-          $(this).turn('peel', 'br');
-        }
-      },
+			autoCenter: true,
 
-      missing: function(event, pages) {
-        for (var i = 0; i < pages.length; i++)
-          addPage(pages[i], $(this));
-      }
-    }
-  });
+			// Elevation from the edge of the flipbook when turning a page
 
-  $('.magazine-viewport').zoom({
-    flipbook: $('.magazine'),
+			elevation: 50,
 
-    max: function() {
-      return largeMagazineWidth() / $('.magazine').width();
-    },
+			// The number of pages
 
-    when: {
-      swipeLeft: function() {
-        $(this).zoom('flipbook').turn('next');
-      },
+			pages: 30,
 
-      swipeRight: function() {
-        $(this).zoom('flipbook').turn('previous');
-      },
+			// Events
 
-      resize: function(event, scale, page, pageElement) {
-        if (scale == 1)
-          loadSmallPage(page, pageElement);
-        else
-          loadLargePage(page, pageElement);
-      },
+			when: {
+				turning: function(event, page, view) {
+					
+					var book = $(this),
+					currentPage = book.turn('page'),
+					pages = book.turn('pages');
+			
+					// Update the current URI
 
-      zoomIn: function() {
-        $('.thumbnails').hide();
-        $('.made').hide();
-        $('.magazine').removeClass('animated').addClass('zoom-in');
-        $('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+					Hash.go('page/' + page).update();
 
-        if (!window.escTip && !$.isTouch) {
-          escTip = true;
+					// Show and hide navigation buttons
 
-          $('<div />', {'class': 'exit-message'})
-            .html('<div>Press ESC to exit</div>')
-            .appendTo($('body'))
-            .delay(2000)
-            .animate({opacity: 0}, 500, function() {
-              $(this).remove();
-            });
-        }
-      },
+					disableControls(page);
+					
 
-      zoomOut: function() {
-        $('.exit-message').hide();
-        $('.thumbnails').fadeIn();
-        $('.made').fadeIn();
-        $('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+					$('.thumbnails .page-'+currentPage).
+						parent().
+						removeClass('current');
 
-        setTimeout(function() {
-          $('.magazine').addClass('animated').removeClass('zoom-in');
-          resizeViewport();
-        }, 0);
-      }
-    }
-  });
+					$('.thumbnails .page-'+page).
+						parent().
+						addClass('current');
 
-  if ($.isTouch)
-    $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-  else
-    $('.magazine-viewport').bind('zoom.tap', zoomTo);
 
-  $(document).keydown(function(e) {
-    var previous = 37, next = 39, esc = 27;
 
-    switch (e.keyCode) {
-      case previous:
-        $('.magazine').turn('previous');
-        e.preventDefault();
-        break;
+				},
 
-      case next:
-        $('.magazine').turn('next');
-        e.preventDefault();
-        break;
+				turned: function(event, page, view) {
 
-      case esc:
-        $('.magazine-viewport').zoom('zoomOut');
-        e.preventDefault();
-        break;
-    }
-  });
+					disableControls(page);
 
-  Hash.on('^page\\/([0-9]*)$', {
-    yep: function(path, parts) {
-      var page = parts[1];
+					$(this).turn('center');
 
-      if (page !== undefined) {
-        if ($('.magazine').turn('is'))
-          $('.magazine').turn('page', page);
-      }
-    },
+					if (page==1) { 
+						$(this).turn('peel', 'br');
+					}
 
-    nop: function(path) {
-      if ($('.magazine').turn('is'))
-        $('.magazine').turn('page', 1);
-    }
-  });
+				},
 
-  $(window).resize(function() {
-    resizeViewport();
-  }).bind('orientationchange', function() {
-    resizeViewport();
-  });
+				missing: function (event, pages) {
 
-  $('.thumbnails').click(function(event) {
-    var page;
+					// Add pages that aren't in the magazine
 
-    if (event.target && (page = /page-([0-9]+)/.exec($(event.target).attr('class')))) {
-      $('.magazine').turn('page', page[1]);
-    }
-  });
+					for (var i = 0; i < pages.length; i++)
+						addPage(pages[i], $(this));
 
-  $('.thumbnails li')
-    .bind($.mouseEvents.over, function() {
-      $(this).addClass('thumb-hover');
-    }).bind($.mouseEvents.out, function() {
-      $(this).removeClass('thumb-hover');
-    });
+				}
+			}
 
-  if ($.isTouch) {
-    $('.thumbnails')
-      .addClass('thumbanils-touch')
-      .bind($.mouseEvents.move, function(event) {
-        event.preventDefault();
-      });
-  } else {
-    $('.thumbnails ul').mouseover(function() {
-      $('.thumbnails').addClass('thumbnails-hover');
-    }).mousedown(function() {
-      return false;
-    }).mouseout(function() {
-      $('.thumbnails').removeClass('thumbnails-hover');
-    });
-  }
+	});
 
-  if ($.isTouch) {
-    $('.magazine').bind('touchstart', regionClick);
-  } else {
-    $('.magazine').click(regionClick);
-  }
+	// Zoom.js
 
-  $('.next-button').bind($.mouseEvents.over, function() {
-    $(this).addClass('next-button-hover');
-  }).bind($.mouseEvents.out, function() {
-    $(this).removeClass('next-button-hover');
-  }).bind($.mouseEvents.down, function() {
-    $(this).addClass('next-button-down');
-  }).bind($.mouseEvents.up, function() {
-    $(this).removeClass('next-button-down');
-  }).click(function() {
-    $('.magazine').turn('next');
-  });
+	$('.magazine-viewport').zoom({
+		flipbook: $('.magazine'),
 
-  $('.previous-button').bind($.mouseEvents.over, function() {
-    $(this).addClass('previous-button-hover');
-  }).bind($.mouseEvents.out, function() {
-    $(this).removeClass('previous-button-hover');
-  }).bind($.mouseEvents.down, function() {
-    $(this).addClass('previous-button-down');
-  }).bind($.mouseEvents.up, function() {
-    $(this).removeClass('previous-button-down');
-  }).click(function() {
-    $('.magazine').turn('previous');
-  });
+		max: function() { 
+			
+			return largeMagazineWidth()/$('.magazine').width();
 
-  resizeViewport();
-  $('.magazine').addClass('animated');
+		}, 
+
+		when: {
+
+			swipeLeft: function() {
+
+				$(this).zoom('flipbook').turn('next');
+
+			},
+
+			swipeRight: function() {
+				
+				$(this).zoom('flipbook').turn('previous');
+
+			},
+
+			resize: function(event, scale, page, pageElement) {
+
+				if (scale==1)
+					loadSmallPage(page, pageElement);
+				else
+					loadLargePage(page, pageElement);
+
+			},
+
+			zoomIn: function () {
+
+				$('.thumbnails').hide();
+				$('.made').hide();
+				$('.magazine').removeClass('animated').addClass('zoom-in');
+				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+				
+				if (!window.escTip && !$.isTouch) {
+					escTip = true;
+
+					$('<div />', {'class': 'exit-message'}).
+						html('<div>Press ESC to exit</div>').
+							appendTo($('body')).
+							delay(2000).
+							animate({opacity:0}, 500, function() {
+								$(this).remove();
+							});
+				}
+			},
+
+			zoomOut: function () {
+
+				$('.exit-message').hide();
+				$('.thumbnails').fadeIn();
+				$('.made').fadeIn();
+				$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+
+				setTimeout(function(){
+					$('.magazine').addClass('animated').removeClass('zoom-in');
+					resizeViewport();
+				}, 0);
+
+			}
+		}
+	});
+
+	// Zoom event
+
+	if ($.isTouch)
+		$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+	else
+		$('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+
+	// Using arrow keys to turn the page
+
+	$(document).keydown(function(e){
+
+		var previous = 37, next = 39, esc = 27;
+
+		switch (e.keyCode) {
+			case previous:
+
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+
+			break;
+			case next:
+
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+
+			break;
+			case esc:
+				
+				$('.magazine-viewport').zoom('zoomOut');	
+				e.preventDefault();
+
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1 
+
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			var page = parts[1];
+
+			if (page!==undefined) {
+				if ($('.magazine').turn('is'))
+					$('.magazine').turn('page', page);
+			}
+
+		},
+		nop: function(path) {
+
+			if ($('.magazine').turn('is'))
+				$('.magazine').turn('page', 1);
+		}
+	});
+
+
+	$(window).resize(function() {
+		resizeViewport();
+	}).bind('orientationchange', function() {
+		resizeViewport();
+	});
+
+	// Events for thumbnails
+
+	$('.thumbnails').click(function(event) {
+		
+		var page;
+
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+		
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+
+	$('.thumbnails li').
+		bind($.mouseEvents.over, function() {
+			
+			$(this).addClass('thumb-hover');
+
+		}).bind($.mouseEvents.out, function() {
+			
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {
+	
+		$('.thumbnails').
+			addClass('thumbanils-touch').
+			bind($.mouseEvents.move, function(event) {
+				event.preventDefault();
+			});
+
+	} else {
+
+		$('.thumbnails ul').mouseover(function() {
+
+			$('.thumbnails').addClass('thumbnails-hover');
+
+		}).mousedown(function() {
+
+			return false;
+
+		}).mouseout(function() {
+
+			$('.thumbnails').removeClass('thumbnails-hover');
+
+		});
+
+	}
+
+
+	// Regions
+
+	if ($.isTouch) {
+		$('.magazine').bind('touchstart', regionClick);
+	} else {
+		$('.magazine').click(regionClick);
+	}
+
+	// Events for the next button
+
+	$('.next-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('next-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('next-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('next-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('next-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('next');
+
+	});
+
+	// Events for the next button
+	
+	$('.previous-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('previous-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('previous-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('previous-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('previous-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('previous');
+
+	});
+
+
+	resizeViewport();
+
+	$('.magazine').addClass('animated');
+
 }
 
-$('.zoom-icon').bind('mouseover', function() {
+// Zoom icon
 
-  if ($(this).hasClass('zoom-icon-in'))
-    $(this).addClass('zoom-icon-in-hover');
+ $('.zoom-icon').bind('mouseover', function() { 
+ 	
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).addClass('zoom-icon-in-hover');
 
-  if ($(this).hasClass('zoom-icon-out'))
-    $(this).addClass('zoom-icon-out-hover');
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).addClass('zoom-icon-out-hover');
+ 
+ }).bind('mouseout', function() { 
+ 	
+ 	 if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).removeClass('zoom-icon-in-hover');
+ 	
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).removeClass('zoom-icon-out-hover');
 
-}).bind('mouseout', function() {
+ }).bind('click', function() {
 
-  if ($(this).hasClass('zoom-icon-in'))
-    $(this).removeClass('zoom-icon-in-hover');
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$('.magazine-viewport').zoom('zoomIn');
+ 	else if ($(this).hasClass('zoom-icon-out'))	
+		$('.magazine-viewport').zoom('zoomOut');
 
-  if ($(this).hasClass('zoom-icon-out'))
-    $(this).removeClass('zoom-icon-out-hover');
+ });
 
-}).bind('click', function() {
+ $('#canvas').hide();
 
-  if ($(this).hasClass('zoom-icon-in'))
-    $('.magazine-viewport').zoom('zoomIn');
-  else if ($(this).hasClass('zoom-icon-out'))
-    $('.magazine-viewport').zoom('zoomOut');
-});
 
-$('#canvas').hide();
+// Load the HTML4 version if there's not CSS transform
 
 yepnope({
-  test: Modernizr.csstransforms,
-  yep: ['lib/turn.js'],
-  nope: ['lib/turn.html4.min.js'],
-  both: ['lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
-  complete: loadApp
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	complete: loadApp
 });
 </script>
-
 <audio id="flipSound" preload="auto">
   <source src="extras/flip.mp3" type="audio/mpeg">
 </audio>
 
 <script>
 $(function () {
-  const sound = document.getElementById('flipSound');
+    const sound = document.getElementById('flipSound');
 
-  function playFlipSound() {
-    if (!sound) return;
-    sound.currentTime = 0;
-    const p = sound.play();
-    if (p && typeof p.catch === 'function') {
-      p.catch(() => {});
+    function playFlipSound() {
+        if (!sound) return;
+        sound.currentTime = 0;
+        const p = sound.play();
+        if (p && typeof p.catch === 'function') {
+            p.catch(() => {});
+        }
     }
-  }
 
-  $('.magazine').on('turning', function () {
-    playFlipSound();
-  });
+    $('.magazine').on('turning', function () {
+        playFlipSound();
+    });
 });
 </script>
-
 </body>
 </html>
